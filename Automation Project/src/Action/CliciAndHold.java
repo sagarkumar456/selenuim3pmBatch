@@ -17,7 +17,7 @@ public class CliciAndHold {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://www.kirupa.com/html5/press_and_hold.htm");
 		WebElement circle = driver.findElement(By.id("item"));
-		Actions action = new Actions(driver);
+		Actions action =  new Actions(driver);
 		
 		action.clickAndHold(circle).perform();
 		
